@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -29,14 +30,14 @@ export default function Home() {
           estoy con covid, no puedo ir a resolverlo. Así que serás la encargada
           de encontrar lo que estamos buscando.
         </p>
-        <p>Una vez que termines, hace clic en "Ya encontré todas las pistas"</p>
+        <p>Una vez que termines, hace clic en &apos;Ya encontré todas las pistas&apos;</p>
         <p>
           Mi querido Watson me llamó muy desesperado desde birmingham y me dijo:
-          "The first clue is under the table".
+          &apos;The first clue is under the table&apos;.
         </p>
 
         <button className='button_finish'>
-          <a className='button_finish' href="/finish">Ya encontré todas las pistas!</a>
+          <Link className='button_finish' href="/finish">Ya encontré todas las pistas!</Link>
         </button>
       </div>
     </div>
